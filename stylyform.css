@@ -1,0 +1,224 @@
+.formularflex{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+}
+
+
+
+label{
+font-family: "Segoe UI";
+font-size: 24px;
+font-weight: 400;
+line-height: 48px;
+min-width: 8vw;
+
+text-align: left;
+
+}
+label>b{
+    color: red;
+}
+
+/*
+.labelinput{
+    display: flex;
+    gap: 36px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+*/
+.labelinput{
+    display: flex;
+    gap: 1vh;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+input[name="formname"]{
+    height: 36px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 30vw;
+}
+input[name="formnamebig"]{
+    padding-bottom: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 30vw;
+}
+select{
+    height: 36px;
+    width: 50%;
+    max-width: 30vw;
+    
+}
+
+.infobox{
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 24px;
+    gap: 1.5vh;
+    max-height: 40vh;
+    width: fit-content;
+    border: 2px solid #DDDDDD;
+    border-radius: 12px;
+    width: inherit;
+
+}
+
+
+h4{
+        font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+
+    color: #3662A1;
+    margin: 0px;
+}
+
+
+.infobox>span>p{   
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    
+    
+    
+    color: #000000;
+    margin: s0px;
+}
+.infobox>span{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+}
+.registracebutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 8px;
+    width: auto;
+   
+    background: #3662A1;
+    border-radius: 5px;
+}
+.registracebutton:hover{
+    background:  #2A4D7F;
+    cursor:pointer;
+
+}
+.registracebutton:active{
+    transform: translateY(2px);
+}
+.registracebutton>h3{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    margin: 0px;
+    color: #FFFFFF;
+}
+.servis{
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 24px;
+    gap: 1.5vh;
+    max-height: 80vh;
+    width: fit-content;
+    border: 2px solid #DDDDDD;
+    border-radius: 12px;
+    
+
+}
+
+/* LUKAŠ CSS */
+
+.product {
+    background-color: #3662a1;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 100px auto auto;
+  /*  margin-bottom: 30px; */
+    width: 98.2%;
+}
+
+.product .garantee {
+    justify-self: end;
+    margin: auto 40px;
+}
+
+.product img {
+    width: 100px;
+}
+
+.product span {
+    color: white;
+    font-weight: normal;
+    font-family: "Segoe UI";
+}
+
+.product-info {
+    display: flex;
+    flex-flow: column;
+    justify-self: left;
+    margin-left: 20px;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.product .product-info span {
+    justify-self: left;
+    align-self: flex-start;
+    margin-bottom: 0px;
+    font-weight: normal;
+}
+
+
+
+
+/* sceny */
+
+#sceneform1{
+    display: inline;
+    width: 100%;
+   
+}
+#sceneform2{
+    width: 100%;
+    display: none;
+}
+#sceneform3{
+    width: 100%;
+    display: none;
+}
+
+.outputflex{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2.4vw;
+    width: 95%;
+    height: 100%;
+}
