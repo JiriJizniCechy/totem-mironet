@@ -67,12 +67,12 @@ document.getElementById("pokracovat1").onclick = function() {
 
             if (a === 1){
 
+                form1[a] = form1[a].replace((/\s+/g), "");
                 if (isNaN(form1[a])) {
-                    form1[a] = form1[a].replace((/\s+/g), "");
                     alert('PSČ musí obsahovat pouze číslice');
                     return;
                 } else if (form1[a].length !== 5) {
-                    alert('PSČ musí mít délku 5 číslic bez mezer');
+                    alert('PSČ musí mít délku 5 číslic');
                     return;
                 }
             } 
