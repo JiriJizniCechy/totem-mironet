@@ -11,7 +11,7 @@ link.addEventListener('click', function(event) {
     // check if the input value contains only numbers
 
 
-    let regex = /^RA23.{6}$/;
+    let regex = /^RA23.{6}$/i;
     if(!regex.test(cisloRma)) {
       alert('Číslo RMA má 10 znaků a začíná RA23 + dalších 6 znaků');
       return;
