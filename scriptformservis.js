@@ -142,13 +142,16 @@ document.getElementById("pokracovat2").onclick = function(){
 
 
     const clickedButton = localStorage.getItem('clickedButton');
-    
+        console.log("neco se děje");
         if (clickedButton === 'button1') {
             document.getElementById("textOutput3").innerHTML = "Servis počítače" ;
+            console.log("neco se děje");
         } else if (clickedButton === 'button2') {
             document.getElementById("textOutput3").innerHTML = "Servis telefonu nebo tabletu" ;
+            console.log("neco se děje");
         } else if (clickedButton === 'button3') {
             document.getElementById("textOutput3").innerHTML = "Servis jiného zařízení" ;
+            console.log("neco se děje");
         }
    
 }
