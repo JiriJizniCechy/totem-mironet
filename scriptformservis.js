@@ -1,5 +1,19 @@
 var form1 = [];
 
+
+//ZMĚNA OUTPUT 3
+const clickedButton = localStorage.getItem('clickedButton');
+if (clickedButton === 'button1') {
+    document.getElementById("textOutput3").innerHTML = "Servis počítače" ;
+ 
+} else if (clickedButton === 'button2') {
+    document.getElementById("textOutput3").innerHTML = "Servis telefonu nebo tabletu" ;
+
+} else if (clickedButton === 'button3') {
+    document.getElementById("textOutput3").innerHTML = "Servis jiného zařízení" ;
+
+}
+
 document.getElementById("registracebutton").onclick = function(){
     document.getElementById("sceneform1").style.display = "none";
     document.getElementById("sceneform2").style.display = "inline";
@@ -101,8 +115,6 @@ document.getElementById("pokracovat1").onclick = function(){
     document.getElementById("textOutput2").innerHTML = form1[9] + "<br>" + form1[6] + "<br>" + form1[10] + 
     " " + form1[7]
 
-    //nějako odchytit textoupt3
-    document.getElementById("textOutput3").innerHTML = "Oprava mobilu";
 
     document.getElementById("sceneform1").style.display = "none";
     document.getElementById("sceneform3").style.display = "inline";
@@ -141,18 +153,7 @@ document.getElementById("pokracovat2").onclick = function(){
         }
 
 
-    const clickedButton = localStorage.getItem('clickedButton');
-        console.log("neco se děje");
-        if (clickedButton === 'button1') {
-            document.getElementById("textOutput3").innerHTML = "Servis počítače" ;
-            console.log("neco se děje");
-        } else if (clickedButton === 'button2') {
-            document.getElementById("textOutput3").innerHTML = "Servis telefonu nebo tabletu" ;
-            console.log("neco se děje");
-        } else if (clickedButton === 'button3') {
-            document.getElementById("textOutput3").innerHTML = "Servis jiného zařízení" ;
-            console.log("neco se děje");
-        }
+
    
 }
 
