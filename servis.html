@@ -14,20 +14,20 @@
         <h2> Servis</h2>
     
             <div class="servisflex">
-                <a href="servisformular1.html">
+                <a href="servisformular1.html" id="pocitacServis">
                 <div class="komponent komponent-male-servis">
                     <h3>Přinesl jsem si počítač na servis</h3>
                 
                 </div>
                 </a>
-                <a href="servisformular1.html">
+                <a href="servisformular1.html"  id="telefonServis">
 
                 <div class="komponent komponent-male-servis">
                     <h3>Přinesl jsem si telefon nebo tablet na servis</h3>
               
                 </div>
                 </a>
-                <a href="servisformular1.html">
+                <a href="servisformular1.html"  id="zarizeniServis">
 
                 <div class="komponent komponent-male-servis">
                     <h3>Přinesl jsem si jiné zařízení na servis</h3>
@@ -67,6 +67,23 @@
 </body>
 
 <script>
+
+    const button1 = document.getElementById('pocitacServis');
+    const button2 = document.getElementById('telefonServis');
+    const button3 = document.getElementById('zarizeniServis');
+    
+    button1.addEventListener('click', () => {
+        localStorage.setItem('clickedButton', 'button1');
+    });
+    
+    button2.addEventListener('click', () => {
+        localStorage.setItem('clickedButton', 'button2');
+    });
+    
+    button3.addEventListener('click', () => {
+        localStorage.setItem('clickedButton', 'button3');
+    });
+
 
 </script>
 

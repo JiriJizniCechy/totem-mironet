@@ -139,6 +139,17 @@ document.getElementById("pokracovat2").onclick = function(){
             document.getElementById("textOutput1").innerHTML = "Email: " + form1[11] + "<br>" + "Telefon: " + form1[6];   
      
         }
+
+
+    const clickedButton = localStorage.getItem('clickedButton');
+    
+        if (clickedButton === 'button1') {
+            document.getElementById("textOutput3").innerHTML = "Servis počítače" ;
+        } else if (clickedButton === 'button2') {
+            document.getElementById("textOutput3").innerHTML = "Servis telefonu nebo tabletu" ;
+        } else if (clickedButton === 'button3') {
+            document.getElementById("textOutput3").innerHTML = "Servis jiného zařízení" ;
+        }
    
 }
 
