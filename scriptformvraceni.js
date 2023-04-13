@@ -1,5 +1,10 @@
 
 const form1 = [];
+
+
+document.getElementById("kodPolozky").innerHTML = "Kód položky: "+ kodPolozky;
+document.getElementById("cisloFaktury").innerHTML = "Koupeno: 13.7 2022, Objednávka číslo: "+ cisloFaktury;
+
 document.getElementById("pokracovat1").onclick = function() {
         for( let i = 1; i<=8; i++){
             
