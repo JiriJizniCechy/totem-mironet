@@ -4,8 +4,7 @@ const form1 = [];
 var cisloFaktury = localStorage.getItem('cisloFaktury');
 var kodPolozky = localStorage.getItem('kodPolozky');
 
-console.log(cisloFaktury);
-console.log(kodPolozky);
+
 
 document.getElementById("kodPolozky").innerHTML = "Kód položky: "+ kodPolozky;
 document.getElementById("cisloFaktury").innerHTML = "Koupeno: 13.7 2022, Objednávka číslo: "+ cisloFaktury;
