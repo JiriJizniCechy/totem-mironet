@@ -38,6 +38,10 @@ link.addEventListener('click', function(event) {
     }  
     }
     
+      // save the values into local storage
+  localStorage.setItem('cisloFaktury', cisloFaktury);
+  localStorage.setItem('kodPolozky', kodPolozky);
+  
   
   // if the input fields are not empty, redirect to the next page
   window.location.href = link.href;
