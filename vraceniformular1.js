@@ -10,17 +10,7 @@ link.addEventListener('click', function(event) {
   var cisloFakturyInput = document.getElementById('textInput');
   var kodPolozkyInput = document.getElementsByName('formname')[1];
 
-  // get the input field values
- // get the input field values
-    var cisloFaktury = cisloFakturyInput.value.trim();
-
-    // check if the input value contains only numbers
-    var numbersOnly = /^\d+$/.test(cisloFaktury);
-    if (!numbersOnly) {
-  alert('Číslo faktury musí být číslo.');
-  return;
-}
-
+  var cisloFaktury = cisloFakturyInput.value.trim();
   var kodPolozky = kodPolozkyInput.value.trim();
 
   // check if the input fields are empty
@@ -29,8 +19,8 @@ link.addEventListener('click', function(event) {
         return;
     }
     else{
-      if (cisloFaktury === '') {
-        alert('Číslo faktury nesmí být prázdný.');
+      if (cisloFaktury.length !== 10) {
+        alert('Číslo faktury musí mít délku 10 znaků nebob číslic.');
         return;
     }
 
