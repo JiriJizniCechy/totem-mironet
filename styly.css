@@ -328,7 +328,7 @@ h2{
     gap:36px;
     height: 10vh;
     left: 2vw;
-    bottom: 2Vh;
+    bottom: 2vh;
 }
 
 .komponentflex>a{
@@ -338,4 +338,51 @@ h2{
 
 .velkekomponentyflex>a{
     width: 100%
+}
+
+
+
+.progress1{
+    height: 90vh;
+    width: 8px;
+    background: #adadad;
+    left: 98.5vw;
+    bottom: 5Vh;
+    position: absolute;
+    border-radius: 5px;
+    background:  linear-gradient(180deg, #3662A1 25%, #adadad 25%);
+
+}
+.progress2{
+    height: 90vh;
+    width: 8px;
+    background: #adadad;
+    left: 98.5vw;
+    bottom: 5Vh;
+    position: absolute;
+    border-radius: 5px;
+     background:  linear-gradient(180deg, #3662A1 50%, #adadad 50%);
+}
+.progress3{
+    height: 90vh;
+    width: 8px;
+    background: #adadad;
+    left: 98.5vw;
+    bottom: 5Vh;
+    position: absolute;
+    border-radius: 5px;
+    background:  linear-gradient(180deg, #3662A1 75%, #adadad 75%);
+
+}
+.progress4{
+    height: 90vh;
+    width: 8px;
+    background: #adadad;
+   
+    left: 98.5vw;
+    bottom: 5Vh;
+    position: absolute;
+    border-radius: 5px;
+    background:  linear-gradient(180deg, #3662A1 99.5%, #adadad 99.5%);
+   
 }
